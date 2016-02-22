@@ -1,0 +1,11 @@
+package example;
+
+
+class Person {
+    String name;
+}
+
+relation KnownPeople {
+    .pt.ist.fenixframework.DomainRoot playsRole root;
+    Person playsRole people { multiplicity *; }
+}
